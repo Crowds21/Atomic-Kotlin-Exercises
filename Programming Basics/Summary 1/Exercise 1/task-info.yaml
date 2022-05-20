@@ -1,0 +1,26 @@
+type: output
+files:
+- name: test/output.txt
+  visible: false
+  encrypted_text: /kFrX7IPUQxHc5m1Ctj82w==
+  learner_created: false
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 121
+    length: 26
+    placeholder_text: TODO()
+    initial_state:
+      length: 26
+      offset: 121
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: NHP52zZVYiF17j4JSJaSG2O3uwD1Pfw01jTRvESph/sFrnqw6rK5u9K4jpNrLkP4bTxTjBb85wWiXPLWowl2jZqlFau2wcZ0U7GelH+0ttrZBz3h2nf7HenYgQxUdlOE
+  encrypted_text: JOlrc05WUCsrcvu8aiKeKS/Boj3JCpWo/b/qu8QnDwFJO42MX6su96jo8kKLqOrXv5yYOkY80WIBfxLNilCLVfiSlCYghPk7KiwIvzayqOI=
+  learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 19 May 2022 08:20:21 UTC
+record: -1
