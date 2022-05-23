@@ -10,4 +10,5 @@ fun main() {
   capture {
     averageIncome(5000, 0)
   } eq "ArithmeticException: / by zero"
+
 }
