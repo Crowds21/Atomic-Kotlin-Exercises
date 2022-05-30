@@ -1,9 +1,11 @@
 // Lists/Task3.kt
 package listsExercise3
 import atomictest.eq
+import kotlin.collections.Map
+
 
 fun checkAnagrams(s1: String, s2: String): Boolean {
-  TODO()
+  return s1.toList().sorted() == s2.toList().sorted()
 }
 
 fun main() {

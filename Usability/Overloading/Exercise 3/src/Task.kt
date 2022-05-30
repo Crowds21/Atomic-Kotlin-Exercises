@@ -19,15 +19,15 @@ fun List<Int>.myJoinToString(
 }
 
 fun List<Int>.myJoinToString(separator: String, prefix: String): String {
-  return TODO()
+  return myJoinToString(separator, prefix, "")
 }
 
 fun List<Int>.myJoinToString(separator: String): String {
-  return TODO()
+  return myJoinToString(separator, "", "")
 }
 
 fun List<Int>.myJoinToString(): String {
-  return TODO()
+  return myJoinToString(", ", "", "")
 }
 
 /*
@@ -39,9 +39,9 @@ fun List<Int>.myJoinToString(prefix: String, postfix: String): String {
 fun main() {
   val list = listOf(1, 2, 3)
   list.myJoinToString() eq
-    "MY: 1, 2, 3"
+          "MY: 1, 2, 3"
   list.myJoinToString(separator = "|") eq
-    "MY: 1|2|3"
+          "MY: 1|2|3"
   list.myJoinToString(separator = "..", prefix = "Numbers: ") eq
-    "MY: Numbers: 1..2..3"
+          "MY: Numbers: 1..2..3"
 }

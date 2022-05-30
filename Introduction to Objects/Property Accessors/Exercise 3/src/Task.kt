@@ -3,6 +3,14 @@ package propertyAccessorsExercise3
 import atomictest.eq
 
 // TODO: create class MessageStorage
+class MessageStorage{
+    private  var _messages:MutableList<String> = mutableListOf()
+    val messages:List<String>
+        get()= _messages;
+    fun addMessage(param:String){
+        _messages += param
+    }
+}
 
 fun main() {
 /*

@@ -2,10 +2,40 @@
 package summaryIIExercise8
 import atomictest.eq
 
-val romanNumeralToIntMap: Map<String, Int> = TODO()
 
+val romanNumeralToIntMap: Map<String, Int> = mapOf(
+  "M" to 1000,
+  "CM" to 900,
+  "D" to 500,
+  "CD" to 400,
+  "C" to 100,
+  "XC" to 90,
+  "L" to 50,
+  "XL" to 40,
+  "X" to 10,
+  "IX" to 9,
+  "V" to 5,
+  "IV" to 4,
+  "I" to 1)
+
+/**
+ * 只需迭代罗马数字中的每个数字并计算答案。
+ * 以相反的顺序遍历一个罗马数字，每次遍历一个数字（例如，IV包含两个数字），并存储迄今为止找到的最大值。
+ * 如果下一个罗马数字大于或等于当前最大值，请将其添加到结果中。
+ */
 fun convertFromRoman(roman: String): Int {
-  TODO()
+  var result = 0
+  var max = 0
+  for (romanNumeral in roman.reversed()) {
+    val int = romanNumeralToIntMap.getValue("$romanNumeral")
+    if (int >= max) {
+      result += int
+      max = int
+    } else {
+      result -= int
+    }
+  }
+  return result
 }
 
 fun main() {

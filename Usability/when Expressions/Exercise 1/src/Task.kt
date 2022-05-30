@@ -3,8 +3,19 @@ package whenExpressionsExercise1
 import atomictest.capture
 import atomictest.eq
 
+/**
+ * when 表达式可以理解为 switch
+ */
 fun cloudiness(cloudPercent: Int): String =
-  TODO()
+  when (cloudPercent) {
+    in 81..100 -> "Cloudy"
+    in 61..80 -> "Mostly Cloudy"
+    in 41..60 -> "Partly Sunny"
+    in 21..40 -> "Mostly Sunny"
+    in 0..20 -> "Sunny"
+    else -> throw IllegalArgumentException(
+      "Cloudiness value should be between 0 and 100")
+  }
 
 fun main() {
   cloudiness(100) eq "Cloudy"

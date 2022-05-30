@@ -2,6 +2,8 @@
 import atomictest.eq
 
 fun main() {
-  listOf(1) eq "[1]"
-  listOf("a", "b") eq "[a, b]"
+    var refactorTest = 1
+    refactorTest += 1
+    listOf(1) eq "[1]"
+    listOf("a", "b") eq "[a, b]"
 }
