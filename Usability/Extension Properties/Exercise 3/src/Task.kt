@@ -2,7 +2,12 @@
 package extensionPropertiesExercise3
 import atomictest.eq
 
-// TODO
+class Rectangle(val width: Int, val height: Int)
+
+val Rectangle.area: Int
+  get() = width * height
+val Rectangle.isSquare: Boolean
+  get() = width==height
 
 fun main() {
 /*
